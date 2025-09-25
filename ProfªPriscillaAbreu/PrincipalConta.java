@@ -90,4 +90,7 @@ public class PrincipalConta {
 		cliente3.consultarSaldo();
 		
 		System.out.println("--------------------------------------------");
+		cliente.close();
+
+
 		}}
