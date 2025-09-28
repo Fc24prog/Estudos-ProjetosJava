@@ -23,16 +23,23 @@ public class Conta {
 		this.limite = limite;
 	}
 
-	public int getNumero_conta()
+	public int getNumero_conta() 
 	{
 		return numero_conta;
 	}
 
-	
-	public String getNome_proprietário()
+
+	public void setNumero_conta(int numero_conta) 
+	{
+		this.numero_conta = numero_conta;
+	}
+
+
+	public String getNome_proprietário() 
 	{
 		return nome_proprietário;
 	}
+
 
 	public void setNome_proprietário(String nome_proprietário) 
 	{
@@ -46,34 +53,36 @@ public class Conta {
 
 	public void setTipo_conta(int tipo_conta)
 	{
-	    if (tipo_conta == 1 || tipo_conta == 2)
-	    {
-	        this.tipo_conta = tipo_conta;
-	    } else
-	    {
-	        // Informa que a alteração não foi realizada
-	        System.out.println("ERRO: O tipo de conta deve ser 1 (Corrente) ou 2 (Poupança).");
-	    }
-	}
-
-	public double getSaldo()
+		  if (tipo_conta == 1 || tipo_conta == 2)
+		    {
+		        this.tipo_conta = tipo_conta;
+		    } 
+		  else
+		    {
+		        // Informa que a alteração não foi realizada
+		        System.out.println("ERRO: O tipo de conta deve ser 1 (Corrente) ou 2 (Poupança).");
+		    }}
+	public double getSaldo() 
 	{
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
+	public void setSaldo(double saldo) 
+	{
 		this.saldo = saldo;
 	}
 
-	public double getLimite() {
+
+	public double getLimite()
+	{
 		return limite;
 	}
 
-	public void setLimite(double limite) {
+	public void setLimite(double limite) 
+	{
 		this.limite = limite;
 	}
-	
-	
+
 	public double Sacar(double valorSolicitado) 
 	{
 	    // 1. O valor solicitado deve ser positivo
@@ -140,4 +149,3 @@ public class Conta {
 	    }}}   
 	   
 	  
-
