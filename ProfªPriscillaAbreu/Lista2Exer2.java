@@ -16,26 +16,47 @@ public class Lista2Exer2 {
 		this.disponibilidade = disponibilidade;
 	}
 
-	public String getTitulo() {
+
+	public String getTitulo()
+	{
 		return titulo;
 	}
 
-	public String getAutor() {
+	public void setTitulo(String titulo) 
+	{
+		this.titulo = titulo;
+	}
+
+	public String getAutor() 
+	{
 		return autor;
 	}
 
-	public int getAnoPublicacao() {
+	public void setAutor(String autor)
+	{
+		this.autor = autor;
+	}
+
+	public int getAnoPublicacao()
+	{
 		return anoPublicacao;
 	}
 
-	public boolean isDisponibilidade() {
+	public void setAnoPublicacao(int anoPublicacao) 
+	{
+		this.anoPublicacao = anoPublicacao;
+	}
+
+	public boolean isDisponibilidade()
+	{
 		return disponibilidade;
 	}
 
-	public void setDisponibilidade(boolean disponibilidade) {
+	public void setDisponibilidade(boolean disponibilidade)
+	{
 		this.disponibilidade = disponibilidade;
 	}
-	
+
 	public boolean emprestar() { // O livro ainda já foi emprestado? Não (false), então posso fazer o emprestimo e 
 		                                                                                     // retorno (true),pq foi sucesso o emprestimo 
 	    if (this.disponibilidade)
