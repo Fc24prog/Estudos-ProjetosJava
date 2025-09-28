@@ -15,7 +15,13 @@ public class PrincipalConta {
 		
 		Conta cliente2 = new Conta(7859, "Mariana de Paula", 2, 3000.00, 700.00);
 		
-		Conta cliente3= new Conta(7859, "Pedro Bruno", 5, 100000.00, 78000.00);
+		Conta cliente3= new Conta(7859, "Pedro Bruno", 1, 100000.00, 78000.00);
+		
+		Conta cliente4= new Conta (0, null, 0, 0, 0); // aqui vai dar erro, pq o numero só pode ser 1 ou 2.
+		
+		cliente4.setNome_proprietário("Novo Nome");
+		cliente4.consultarSaldo();
+		
 	    
 		System.out.println("----- Saldos Iniciais -----");
        
@@ -90,7 +96,7 @@ public class PrincipalConta {
 		cliente3.consultarSaldo();
 		
 		System.out.println("--------------------------------------------");
+		
+		
 		cliente.close();
-
-
 		}}
