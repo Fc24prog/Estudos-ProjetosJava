@@ -13,10 +13,13 @@ public class EstudanteLista {
 	 Estudante numero1 = new Estudante("Alice Silva", 20, 1001);
      Estudante numero2  = new Estudante("Bruno Mendes", 22, 1002);
      Estudante numero3  = new Estudante("Carla Souza", 19, 1003);
+     Estudante numero4  = new Estudante("Claudia Negona", 32, 20251003);
+
      
      aluno.add(numero1); // Adiciona Alice
      aluno.add(numero2); // Adiciona Bruno
      aluno.add(numero3); // Adiciona Carla
+     aluno.add(numero4);
      
      System.out.println("--- ADICIONANDO ESTUDANTES ---");
      System.out.println("Total de estudantes após a adição: " + aluno.size());
@@ -27,25 +30,25 @@ public class EstudanteLista {
     System.out.println(es); 
    }
    System.out.println(" \n ---------------------------------------------- ");
-   
+	
    Estudante estudanteBuscado = aluno.get(1);  // é o Bruno que tá na posição 1
     
    
    if (estudanteBuscado != null)
    {
 	   System.out.println("Estudante " + numero2.getNome_estudante() + " foi achado com sucesso.");
-       System.out.println("Estudante na posição 1 (índice 1):");
        System.out.println(estudanteBuscado);  // apresento os dados do estudante encontrado
    }
    
    System.out.println(" \n ---------------------------------------------- ");
 
 
-   boolean foiRemovido = aluno.remove(numero3);
+   Estudante foiRemovido = aluno.remove(2);
    
-   if (foiRemovido) 
+   if (foiRemovido != null) 
    {
 	   System.out.println("Estudante " + numero3.getNome_estudante() + " foi removido com sucesso.");
+	   System.out.println(foiRemovido);
     }
    else 
    {
@@ -61,4 +64,3 @@ public class EstudanteLista {
    	{
     System.out.println(es);
     }}}
-
