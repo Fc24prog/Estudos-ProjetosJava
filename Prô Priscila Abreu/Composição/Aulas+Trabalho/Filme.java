@@ -76,7 +76,5 @@ public class Filme {
     }
 	public String toString()
    {
-	    return ("Título: " + titulo + " Descrição: " + descricao +  " Diretor: " + diretor + 
-	    		" Duração" + duracaoEmMinutos + " minutos");       
+	    return ("Título: " + titulo + " Descrição: " + descricao +  " Diretor: " + diretor + " Duração" + duracaoEmMinutos + " minutos");       
     }}
-
