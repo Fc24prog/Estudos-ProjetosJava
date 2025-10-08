@@ -43,8 +43,7 @@ public class Diretor {
 	
 	public String toString() 
 	{
-		return "Diretor [Nome =" + nome + ", ano de experiencia=" + anoExperiencia + ", local de origem=" + localOrigem
-				+ "]";
+		return "Diretor [Nome =" + nome + ", ano de experiencia=" + anoExperiencia + ", local de origem=" + localOrigem + "]";
 	}}
 
 	
