@@ -9,7 +9,7 @@ public class Funcionario extends Pessoa // funcionario vai ter dat de admissão 
 		{ } 
 		
 		// construtor com o nome,cpf e a data de nascimento  da classe pessoa + salario e a data de Adm do funcionario. 
-		public Funcionario(double salario,String nome, String cpf, Data dtNasc,Data dtAdm)  
+		public Funcionario(String nome, String cpf, Data dtNasc,Data dtAdm,double salario)  
 		{
 			super(nome,cpf,dtNasc);
 			this.dtAdmissao = dtAdm;
@@ -51,7 +51,8 @@ public class Funcionario extends Pessoa // funcionario vai ter dat de admissão 
 		}
 		public String toString () 
 		{
-			return (super.toString()+ "Data de Admição: " + dtAdmissao + "Salario do funcionario: " + salario);
+			return (super.toString()+ " Data de Admição: " + dtAdmissao + " Salario do funcionario: " + salario);
 		}}
 		// super.toString() - vai herdar os dados de pessoa lá da classe pessoa. A classe super classe.
+
 
